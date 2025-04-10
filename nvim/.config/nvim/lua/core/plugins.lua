@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
     tag = '0.1.8',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'lewis6991/gitsigns.nvim'
+  use 'tpope/vim-fugitive'
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
