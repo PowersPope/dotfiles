@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   }
   use 'lewis6991/gitsigns.nvim'
   use 'tpope/vim-fugitive'
+  use 'tpope/vim-commentary'
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
