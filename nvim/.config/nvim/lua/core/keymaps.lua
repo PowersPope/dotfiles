@@ -2,6 +2,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalloader = ' '
 
+-- Specify that relative line numbers be pesent in our files
+vim.opt.number = true
+vim.wo.relativenumber = true
+
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
