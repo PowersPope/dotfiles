@@ -2,6 +2,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalloader = ' '
 
+-- Specify the path for python
+vim.g.python3_host_prog = '$HOME/miniforge3/envs/neovim/bin/python'
+
 -- Specify that relative line numbers be pesent in our files
 vim.opt.number = true
 vim.wo.relativenumber = true
@@ -12,6 +15,9 @@ vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
+
+-- Set our conceallevl for concealing characters
+vim.opt.conceallevel = 1
 
 -- use spaces for tabs and whatnot
 vim.opt.tabstop = 2

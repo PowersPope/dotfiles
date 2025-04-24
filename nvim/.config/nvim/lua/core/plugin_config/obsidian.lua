@@ -10,11 +10,23 @@ require("obsidian").setup({
     folder = "7. Journal/" .. os.date("%Y") .. "/" .. os.date("%m-%B") .. "/",
     date_format = "%Y-%m-%d-%A",
     default_tags = { "daily", "oregon" },
-    template = "DailyNotesTemplate.md",
+    template = "Daily.md",
   },
 
   templates = {
     folder = "Templates",
+    date_format = "%Y-%m-%d-%A",
+    substitutions = {
+      modified = function()
+        return os.date("%Y-%m-%d")
+      end,
+      daily_title = function()
+        return os.date("%Y-%m-%d-%A")
+      end,
+      year = function()
+        return os.date("%Y")
+      end,
+    }
   },
 
   completeion = {
