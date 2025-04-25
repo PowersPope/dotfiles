@@ -63,3 +63,6 @@ vim.api.nvim_create_user_command("Uncomment", uncomment, { range = true })
 vim.keymap.set('v', '<leader>uc', ':Uncomment<CR>')
 vim.keymap.set('n', '<leader>uc', ':Uncomment<CR>')
 
+-- Custom Keymap for sourcing a file
+vim.keymap.set('n', '<c-s>', ':source %')
+
