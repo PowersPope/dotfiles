@@ -8,4 +8,6 @@ require("core.plugin_config.vim-fugitive")
 require("core.plugin_config.mason")
 require("core.plugin_config.obsidian")
 require("core.plugin_config.nvim-cmp")
+require("core.plugin_config.cmp-nvim-lsp")
 require("core.plugin_config.ultisnips")
+

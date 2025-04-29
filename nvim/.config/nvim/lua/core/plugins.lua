@@ -26,29 +26,32 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-commentary'
-  use 'williamboman/mason.nvim'
+  -- Completion Area
+  use {
+      "hrsh7th/nvim-cmp",
+      requires = {
+          "hrsh7th/cmp-buffer", "hrsh7th/cmp-nvim-lsp",
+          'quangnguyen30192/cmp-nvim-ultisnips', 'hrsh7th/cmp-nvim-lua',
+          'octaltree/cmp-look', 'hrsh7th/cmp-path', 'hrsh7th/cmp-calc',
+          'f3fora/cmp-spell', 'hrsh7th/cmp-emoji'
+      }
+  }
+  use 'SirVer/ultisnips'
+  use {
+    'hrsh7th/vim-vsnip',
+    requires = { 'hrsh7th/vim-vsnip-integ' }
+  }
+  use { 
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
+  }
+  -- Obsidian package
   use {
     "epwalsh/obsidian.nvim",
     tag = "*",
     requires = { "nvim-lua/plenary.nvim" }
     }
-    use {
-        "hrsh7th/nvim-cmp",
-        requires = {
-            "hrsh7th/cmp-buffer", "hrsh7th/cmp-nvim-lsp",
-            'quangnguyen30192/cmp-nvim-ultisnips', 'hrsh7th/cmp-nvim-lua',
-            'octaltree/cmp-look', 'hrsh7th/cmp-path', 'hrsh7th/cmp-calc',
-            'f3fora/cmp-spell', 'hrsh7th/cmp-emoji'
-        }
-    }
-    use 'SirVer/ultisnips'
-    use {
-      'hrsh7th/vim-vsnip',
-      requires = { 'hrsh7th/vim-vsnip-integ' }
-    }
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -3,7 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalloader = ' '
 
 -- Specify the path for python
-vim.g.python3_host_prog = '$HOME/miniforge3/envs/neovim/bin/python'
+vim.g.python3_host_prog = '$HOME/miniconda3/bin/python'
 
 -- Specify that relative line numbers be pesent in our files
 vim.opt.number = true
@@ -63,6 +63,6 @@ vim.api.nvim_create_user_command("Uncomment", uncomment, { range = true })
 vim.keymap.set('v', '<leader>uc', ':Uncomment<CR>')
 vim.keymap.set('n', '<leader>uc', ':Uncomment<CR>')
 
--- Custom Keymap for sourcing a file
-vim.keymap.set('n', '<c-s>', ':source %')
+-- Custom Keymap for saving and sourcing a file
+vim.keymap.set('n', '<leader>s', ':w | source %<CR>', { desc = "Save and source file"})
 

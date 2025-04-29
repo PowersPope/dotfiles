@@ -2,6 +2,7 @@
 -- Large inspiration from this github repo
 
 local has_cmp, cmp = pcall(require, 'cmp')
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local select_next_item = function(fallback)
   if cmp.visible() then
@@ -177,6 +178,11 @@ local toggle_ghost_text = function()
   end
 end
 
+
 vim.api.nvim_create_autocmd({ 'InsertEnter', 'CursorMovedI' }, {
   callback = toggle_ghost_text,
 })
+
+return {
+  capabilities = capabilities,
+}
