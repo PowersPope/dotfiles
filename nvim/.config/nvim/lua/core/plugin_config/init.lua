@@ -10,4 +10,5 @@ require("core.plugin_config.obsidian")
 require("core.plugin_config.nvim-cmp")
 require("core.plugin_config.cmp-nvim-lsp")
 require("core.plugin_config.ultisnips")
+require("core.plugin_config.autoclose")
 

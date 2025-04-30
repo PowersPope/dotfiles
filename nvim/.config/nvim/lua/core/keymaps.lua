@@ -3,7 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalloader = ' '
 
 -- Specify the path for python
-vim.g.python3_host_prog = '$HOME/miniconda3/bin/python'
+vim.g.python3_host_prog = '$HOME/miniforge3/envs/neovim/bin/python'
 
 -- Specify that relative line numbers be pesent in our files
 vim.opt.number = true

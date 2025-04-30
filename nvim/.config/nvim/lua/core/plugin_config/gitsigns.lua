@@ -74,10 +74,10 @@ require('gitsigns').setup{
     end)
 
     -- Actions
-    map('n', '<leader>hs', gitsigns.stage_hunk)
-    map('n', '<leader>hr', gitsigns.reset_hunk)
+    map('n', '<leader>gs', gitsigns.stage_hunk)
+    map('n', '<leader>gr', gitsigns.reset_hunk)
 
-    map('v', '<leader>hs', function()
+    map('v', '<leader>gs', function()
       gitsigns.stage_hunk({ vim.fn.line('.'), vim.fn.line('v') })
     end)
 
@@ -85,23 +85,23 @@ require('gitsigns').setup{
       gitsigns.reset_hunk({ vim.fn.line('.'), vim.fn.line('v') })
     end)
 
-    map('n', '<leader>hS', gitsigns.stage_buffer)
-    map('n', '<leader>hR', gitsigns.reset_buffer)
-    map('n', '<leader>hp', gitsigns.preview_hunk)
-    map('n', '<leader>hi', gitsigns.preview_hunk_inline)
+    map('n', '<leader>gS', gitsigns.stage_buffer)
+    map('n', '<leader>gR', gitsigns.reset_buffer)
+    map('n', '<leader>gp', gitsigns.preview_hunk)
+    map('n', '<leader>gi', gitsigns.preview_hunk_inline)
 
     map('n', '<leader>hb', function()
       gitsigns.blame_line({ full = true })
     end)
 
-    map('n', '<leader>hd', gitsigns.diffthis)
+    map('n', '<leader>gd', gitsigns.diffthis)
 
-    map('n', '<leader>hD', function()
+    map('n', '<leader>gD', function()
       gitsigns.diffthis('~')
     end)
 
-    map('n', '<leader>hQ', function() gitsigns.setqflist('all') end)
-    map('n', '<leader>hq', gitsigns.setqflist)
+    map('n', '<leader>gQ', function() gitsigns.setqflist('all') end)
+    map('n', '<leader>gq', gitsigns.setqflist)
 
     -- Toggles
     map('n', '<leader>tb', gitsigns.toggle_current_line_blame)

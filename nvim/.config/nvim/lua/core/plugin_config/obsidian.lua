@@ -265,3 +265,5 @@ require("obsidian").setup({
   },
 
 })
+
+vim.keymap.set('n', '<leader>ot', ':ObsidianToday<CR>')

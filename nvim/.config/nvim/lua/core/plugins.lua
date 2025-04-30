@@ -52,6 +52,8 @@ return require('packer').startup(function(use)
     tag = "*",
     requires = { "nvim-lua/plenary.nvim" }
     }
+  -- auto close the brackets or any double combo
+  use 'm4xshen/autoclose.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
