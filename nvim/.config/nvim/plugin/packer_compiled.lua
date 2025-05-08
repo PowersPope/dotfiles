@@ -177,7 +177,7 @@ _G.packer_plugins = {
   ["obsidian.nvim"] = {
     loaded = true,
     path = "/home/powers/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
-    url = "https://github.com/epwalsh/obsidian.nvim"
+    url = "https://github.com/obsidian-nvim/obsidian.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

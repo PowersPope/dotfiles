@@ -48,7 +48,8 @@ return require('packer').startup(function(use)
   }
   -- Obsidian package
   use {
-    "epwalsh/obsidian.nvim",
+--     "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     tag = "*",
     requires = { "nvim-lua/plenary.nvim" }
     }
